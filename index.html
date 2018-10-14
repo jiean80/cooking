@@ -16,7 +16,7 @@ body{background: url(img/bgimg.gif) repeat; background-size:cover;}
 #water {position: absolute; top:38%; left:54.9%; cursor:pointer;}
 
 
-#hannibal {position: absolute; top:50%;left:58%;}
+#hannibal {position: absolute; top:50%;left:58%; transition: all 3s; cursor:pointer;}
 
 
 </style>
@@ -149,6 +149,12 @@ body{background: url(img/bgimg.gif) repeat; background-size:cover;}
 			waterM.load();
 			toggle = "off";
 		}
+	}
+
+	hannibal.onclick = function(){
+		hannibal.style.top = Math.random()*60 + "%";
+		hannibal.style.left = Math.random()*60 + "%";
+		
 	}
 
 </script>
